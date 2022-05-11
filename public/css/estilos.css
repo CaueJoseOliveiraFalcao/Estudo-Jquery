@@ -25,4 +25,8 @@ li{
     margin: 0 1rem;
     background-color: #F8C977;
 }
-
+.reset-buttom{
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: none;
+}

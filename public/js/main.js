@@ -1,26 +1,31 @@
-let frase = $(".frase").text().split(' ').length;
-let tamanhoDaFrase = $('.contador-palavras').text(frase);
+$(document).ready(function(){
+    AtualizaFrase()
+    InicializaContadores()
+    InicializaCronometo()
+})
 
-
+function AtualizaFrase() {
+    let frase = $(".frase").text().split(' ').length;
+    let tamanhoDaFrase = $('.contador-palavras').text(frase);
+};
 let campo = $('.campo-de-digitacao');
-campo.on('input' , function (){
-    let campo_main = campo.val();
-    $('.contador-palavras-l').text(campo_main.split(/\S+/).length - 1);
-    $('.contador-caracteres').text(campo_main.split('').length);
-});
+function InicializaContadores(){
+    campo.on('input', function () {
+        let campo_main = campo.val();
+        $('.contador-palavras-l').text(campo_main.split(/\S+/).length - 1);
+        $('.contador-caracteres').text(campo_main.split('').length);
+    })
+};
+let log = $('.tempo-digi').text()
+function InicializaCronometo(){
+    campo.on('focus' , function(){
+        let close = setInterval(function(){
+        log--;
+        $('.tempo-digi').text(log)
 
-
-let tempo = $('.tempo-digi').text()
-
-campo.on('focus', function () {
-    let stop = setInterval(function(){
-        tempo--
-        $('.tempo-digi').text(tempo)
-        console.log(tempo)
-        if(tempo == 0){
-            campo.attr('disabled' , 'true');
-            clearInterval(stop)
-            alert(`Game Over`)
+        if(log == 0){
+            campo.attr('disabled' , true)
+            clearInterval(close)
         }
     },1000)
-})
+})}
