@@ -30,3 +30,6 @@ li{
     border-radius: 10px;
     border-style: none;
 }
+.campo-desativado{
+    background-color: lightgray;
+}

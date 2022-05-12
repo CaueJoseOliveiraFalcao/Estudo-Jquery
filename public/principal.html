@@ -12,6 +12,7 @@
     <title>Alura Typer</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
     <section class="d-flex justify-content-center">
         <h1 class="text-center">Alura Typer</h1>
@@ -20,14 +21,39 @@
         <li><img src="./img/clock.png"><span class="tempo-digi">10</span> segundos</li>
     </ul>
     <section class="d-flex justify-content-center">
-    <textarea class="campo-de-digitacao" cols="40" rows="10"></textarea>
+        <textarea class="campo-de-digitacao" cols="40" rows="10"></textarea>
     </section>
     <ul>
         <li><span class="contador-caracteres">0</span> caracteres</li>
-        <li><button class="reset-buttom" onclick='window.location.reload()'>Resetar</button></li>
+        <li><button class="reset-buttom">Resetar</button></li>
         <li><span class="contador-palavras-l">0</span> palavras</li>
     </ul>
+    <section class="placar">
+        <section class="d-flex justify-content-center align-items-center flex-column">
+            <h3 class="text-center">Placar</h3>
+            
+            <section style="width:30%!important;">
+            <table class="table w-100">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Numeros de Palavras</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                 
+                </tbody>
+              </table>
+            </section>
+        </section>
+    </section>
 </body>
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/main.js"></script>
+
 </html>
