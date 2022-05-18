@@ -76,3 +76,8 @@ function reiniciaJogo() {
     campo.removeClass("borda-vermelha");
     campo.removeClass("borda-verde");
 }
+
+function AtuailizaTempoInicial(tempo){
+    $('.tempo-digitacao').text(tempo)
+    
+}
