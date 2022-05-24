@@ -24,3 +24,13 @@
 .borda-vermelha {
     border: 3px solid red;
 }
+#spiner{
+    display: none;
+}
+#frase-id{
+    background-color: rgb(235, 235, 235);
+    width: 40px;
+}
+#botao-salvar{
+    float: right;
+}
