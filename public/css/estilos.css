@@ -34,3 +34,6 @@
 #botao-salvar{
     float: right;
 }
+.select #usuarios{
+    display: block;
+}
